@@ -1,20 +1,56 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="page">
       <section className="container">
+        <div className="logo-wrapper">
+          <Image
+            src="/images/ars-tech-logo.png"
+            alt="ARS TECH COMPANY Logo"
+            width={160}
+            height={160}
+            priority
+            className="logo"
+          />
+        </div>
+
         <h1>
           ARS <span>TECH</span> COMPANY
         </h1>
 
-        <p>🚀 Estamos construindo algo incrível</p>
+        <p className="tagline">🚀 Estamos construindo algo incrível</p>
 
         <div className="card">
-          Desenvolvimento de Software <br /><br />
-          ☁️ Cloud Computing <br /><br />
-          ⚙️ Automação e Tecnologia
+          <div className="service-item">
+            <span className="service-icon">💻</span>
+            <span>Desenvolvimento de Software</span>
+          </div>
+          <div className="service-item">
+            <span className="service-icon">☁️</span>
+            <span>Cloud Computing</span>
+          </div>
+          <div className="service-item">
+            <span className="service-icon">⚙️</span>
+            <span>Automação e Tecnologia</span>
+          </div>
+          <div className="service-item">
+            <span className="service-icon">📣</span>
+            <span>Marketing Digital</span>
+          </div>
         </div>
 
         <p className="soon">Em breve no ar...</p>
+
+        <div className="contact">
+          <p className="contact-label">Quer saber mais ou entrar em contato?</p>
+          <a
+            href="mailto:desenvolvimento@arstechcompany.com.br"
+            className="contact-link"
+          >
+            ✉️ desenvolvimento@arstechcompany.com.br
+          </a>
+        </div>
       </section>
     </main>
   );
