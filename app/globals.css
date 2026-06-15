@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 0 50px black;
+  max-width: 760px;
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(42px, 8vw, 72px);
+  margin: 0 0 24px;
+}
+
+span {
+  color: #38bdf8;
+}
+
+p {
+  font-size: 22px;
+  color: #cbd5e1;
+}
+
+.card {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+.soon {
+  margin-top: 40px;
+}
