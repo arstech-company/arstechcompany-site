@@ -48,9 +48,11 @@ body {
   background: linear-gradient(150deg, var(--bg-deep) 0%, var(--bg-navy) 50%, var(--bg-card) 100%);
   color: var(--white);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 32px 16px;
+  gap: 0;
 }
 
 .container {
@@ -149,7 +151,6 @@ h1 span {
 
 /* ── Contato ──────────────────────────────────────────────────────── */
 .contact {
-  border-top: 1px solid rgba(86, 126, 186, 0.25);
   padding-top: 28px;
   animation: fadeUp 0.85s 0.5s ease both;
 }
@@ -178,6 +179,17 @@ h1 span {
   border-color: var(--accent);
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(2, 71, 179, 0.5);
+}
+
+/* ── Rodapé ───────────────────────────────────────────────────────── */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: clamp(12px, 1.8vw, 14px);
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  animation: fadeUp 0.85s 0.6s ease both;
 }
 
 /* ── Responsivo mobile ────────────────────────────────────────────── */

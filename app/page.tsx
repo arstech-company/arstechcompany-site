@@ -52,6 +52,10 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <footer className="footer">
+        <p>© 2026 ARS Tech Company. Todos os direitos reservados.</p>
+      </footer>
     </main>
   );
 }
