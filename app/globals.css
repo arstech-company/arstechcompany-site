@@ -1,19 +1,20 @@
-/* ── Paleta extraída do logo ars-tech-logo.png ──────────────────────────
-   Background navy: #05152d  #041e42
-   Azul forte (accent): #0247b3  #023080
-   Azul médio: #567eba  #739bd9
-   Texto suave: #91b2e7  #c6d2e2
+/* ── Paleta extraída do logo ars-tech-logo.jpeg ─────────────────────────
+   Background dark navy: #00111e  (~73% do logo)
+   Near-black:           #000a15
+   Steel blue (accent):  #3b5699  (~2.5% — cor real do logo)
+   Deep navy:            #030a4c  (~1.2% — accent escuro)
+   Off-white:            #eeeeee  (~4% — texto/marca no logo)
    ──────────────────────────────────────────────────────────────────── */
 :root {
-  --bg-deep:    #010a18;
-  --bg-navy:    #05152d;
-  --bg-card:    #041e42;
-  --accent:     #0247b3;
-  --accent-mid: #567eba;
-  --accent-light: #91b2e7;
-  --text-body:  #c6d2e2;
-  --text-muted: #739bd9;
-  --white:      #ffffff;
+  --bg-deep:      #00080f;   /* mais profundo que o logo — fundo dramático   */
+  --bg-navy:      #00111d;   /* corresponde ao bg principal do logo          */
+  --bg-card:      #020e38;   /* entre #030a4c (logo) e navy — profundidade   */
+  --accent:       #3d60b0;   /* steel blue refinado do logo (#3b5699 +brillo) */
+  --accent-mid:   #5a7cc2;   /* mid-tone steel blue                          */
+  --accent-light: #8aaad8;   /* light steel blue — textos/ícones             */
+  --text-body:    #c6d4e8;   /* azul-branco frio — leitura confortável       */
+  --text-muted:   #7c96c8;   /* azul aço suave — textos secundários         */
+  --white:        #edf2f8;   /* branco frio — mais sofisticado que puro      */
 }
 
 * {
@@ -33,8 +34,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 18px rgba(2, 71, 179, 0.35); }
-  50%       { box-shadow: 0 0 38px rgba(2, 71, 179, 0.7); }
+  0%, 100% { box-shadow: 0 0 18px rgba(61, 96, 176, 0.4); }
+  50%       { box-shadow: 0 0 40px rgba(61, 96, 176, 0.75); }
 }
 
 @keyframes spin-slow {
@@ -57,12 +58,12 @@ body {
 
 .container {
   text-align: center;
-  background: rgba(4, 30, 66, 0.55);
+  background: rgba(2, 14, 56, 0.6);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(86, 126, 186, 0.25);
+  border: 1px solid rgba(90, 124, 194, 0.25);
   padding: 56px 48px;
   border-radius: 28px;
-  box-shadow: 0 0 80px rgba(2, 48, 128, 0.5), 0 0 0 1px rgba(145, 178, 231, 0.08);
+  box-shadow: 0 0 80px rgba(61, 96, 176, 0.45), 0 0 0 1px rgba(138, 170, 216, 0.08);
   max-width: 780px;
   width: 100%;
   animation: fadeUp 0.8s ease both;
@@ -118,8 +119,8 @@ h1 span {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(2, 71, 179, 0.15);
-  border: 1px solid rgba(86, 126, 186, 0.3);
+  background: rgba(61, 96, 176, 0.12);
+  border: 1px solid rgba(90, 124, 194, 0.3);
   border-radius: 12px;
   padding: 14px 18px;
   font-size: clamp(14px, 2vw, 17px);
@@ -128,7 +129,7 @@ h1 span {
 }
 
 .service-item:hover {
-  background: rgba(2, 71, 179, 0.3);
+  background: rgba(61, 96, 176, 0.28);
   border-color: var(--accent-mid);
   transform: translateY(-2px);
 }
@@ -166,7 +167,7 @@ h1 span {
   font-size: clamp(14px, 2.2vw, 18px);
   color: var(--accent-light);
   text-decoration: none;
-  border: 1px solid rgba(145, 178, 231, 0.4);
+  border: 1px solid rgba(138, 170, 216, 0.4);
   border-radius: 50px;
   padding: 10px 26px;
   transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.2s, box-shadow 0.25s;
@@ -178,7 +179,7 @@ h1 span {
   color: var(--white);
   border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(2, 71, 179, 0.5);
+  box-shadow: 0 4px 20px rgba(61, 96, 176, 0.55);
 }
 
 /* ── Rodapé ───────────────────────────────────────────────────────── */

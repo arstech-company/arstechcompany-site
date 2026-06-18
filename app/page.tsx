@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const LOGO_VERSION = "20260617";
+const LOGO_VERSION = "20260618";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <section className="container">
         <div className="logo-wrapper">
           <Image
-            src={`/images/ars-tech-logo.png?v=${LOGO_VERSION}`}
+            src={`/images/ars-tech-logo.jpeg?v=${LOGO_VERSION}`}
             alt="ARS TECH COMPANY Logo"
             width={160}
             height={160}
